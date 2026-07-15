@@ -19,6 +19,69 @@ type PassageData = { reference: string; verses: Verse[] };
 
 const PASSAGES: PassageData[] = [
   {
+    reference: "Romans 5 (KJV)",
+    verses: [
+      { book: "Romans", chapter: 5, verse: 1, text: "Therefore being justified by faith, we have peace with God through our Lord Jesus Christ:" },
+      { book: "Romans", chapter: 5, verse: 2, text: "By whom also we have access by faith into this grace wherein we stand, and rejoice in hope of the glory of God." },
+      { book: "Romans", chapter: 5, verse: 3, text: "And not only so, but we glory in tribulations also: knowing that tribulation worketh patience;" },
+      { book: "Romans", chapter: 5, verse: 4, text: "And patience, experience; and experience, hope:" },
+      { book: "Romans", chapter: 5, verse: 5, text: "And hope maketh not ashamed; because the love of God is shed abroad in our hearts by the Holy Ghost which is given unto us." },
+      { book: "Romans", chapter: 5, verse: 6, text: "For when we were yet without strength, in due time Christ died for the ungodly." },
+      { book: "Romans", chapter: 5, verse: 7, text: "For scarcely for a righteous man will one die: yet peradventure for a good man some would even dare to die." },
+      { book: "Romans", chapter: 5, verse: 8, text: "But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us." },
+      { book: "Romans", chapter: 5, verse: 9, text: "Much more then, being now justified by his blood, we shall be saved from wrath through him." },
+      { book: "Romans", chapter: 5, verse: 10, text: "For if, when we were enemies, we were reconciled to God by the death of his Son, much more, being reconciled, we shall be saved by his life." },
+      { book: "Romans", chapter: 5, verse: 11, text: "And not only so, but we also joy in God through our Lord Jesus Christ, by whom we have now received the atonement." },
+      { book: "Romans", chapter: 5, verse: 12, text: "Wherefore, as by one man sin entered into the world, and death by sin; and so death passed upon all men, for that all have sinned:" },
+      { book: "Romans", chapter: 5, verse: 13, text: "(For until the law sin was in the world: but sin is not imputed when there is no law." },
+      { book: "Romans", chapter: 5, verse: 14, text: "Nevertheless death reigned from Adam to Moses, even over them that had not sinned after the similitude of Adam's transgression, who is the figure of him that was to come." },
+      { book: "Romans", chapter: 5, verse: 15, text: "But not as the offence, so also is the free gift. For if through the offence of one many be dead, much more the grace of God, and the gift by grace, which is by one man, Jesus Christ, hath abounded unto many." },
+      { book: "Romans", chapter: 5, verse: 16, text: "And not as it was by one that sinned, so is the gift: for the judgment was by one to condemnation, but the free gift is of many offences unto justification." },
+      { book: "Romans", chapter: 5, verse: 17, text: "For if by one man's offence death reigned by one; much more they which receive abundance of grace and of the gift of righteousness shall reign in life by one, Jesus Christ.)" },
+      { book: "Romans", chapter: 5, verse: 18, text: "Therefore as by the offence of one judgment came upon all men to condemnation; even so by the righteousness of one the free gift came upon all men unto justification of life." },
+      { book: "Romans", chapter: 5, verse: 19, text: "For as by one man's disobedience many were made sinners, so by the obedience of one shall many be made righteous." },
+      { book: "Romans", chapter: 5, verse: 20, text: "Moreover the law entered, that the offence might abound. But where sin abounded, grace did much more abound:" },
+      { book: "Romans", chapter: 5, verse: 21, text: "That as sin hath reigned unto death, even so might grace reign through righteousness unto eternal life by Jesus Christ our Lord." },
+    ],
+  },
+  {
+    reference: "Luke 15 (KJV)",
+    verses: [
+      { book: "Luke", chapter: 15, verse: 1, text: "Then drew near unto him all the publicans and sinners for to hear him." },
+      { book: "Luke", chapter: 15, verse: 2, text: "And the Pharisees and scribes murmured, saying, This man receiveth sinners, and eateth with them." },
+      { book: "Luke", chapter: 15, verse: 3, text: "And he spake this parable unto them, saying," },
+      { book: "Luke", chapter: 15, verse: 4, text: "What man of you, having an hundred sheep, if he lose one of them, doth not leave the ninety and nine in the wilderness, and go after that which is lost, until he find it?" },
+      { book: "Luke", chapter: 15, verse: 5, text: "And when he hath found it, he layeth it on his shoulders, rejoicing." },
+      { book: "Luke", chapter: 15, verse: 6, text: "And when he cometh home, he calleth together his friends and neighbours, saying unto them, Rejoice with me; for I have found my sheep which was lost." },
+      { book: "Luke", chapter: 15, verse: 7, text: "I say unto you, that likewise joy shall be in heaven over one sinner that repenteth, more than over ninety and nine just persons, which need no repentance." },
+      { book: "Luke", chapter: 15, verse: 8, text: "Either what woman having ten pieces of silver, if she lose one piece, doth not light a candle, and sweep the house, and seek diligently till she find it?" },
+      { book: "Luke", chapter: 15, verse: 9, text: "And when she hath found it, she calleth her friends and her neighbours together, saying, Rejoice with me; for I have found the piece which I had lost." },
+      { book: "Luke", chapter: 15, verse: 10, text: "Likewise, I say unto you, there is joy in the presence of the angels of God over one sinner that repenteth." },
+      { book: "Luke", chapter: 15, verse: 11, text: "And he said, A certain man had two sons:" },
+      { book: "Luke", chapter: 15, verse: 12, text: "And the younger of them said to his father, Father, give me the portion of goods that falleth to me. And he divided unto them his living." },
+      { book: "Luke", chapter: 15, verse: 13, text: "And not many days after the younger son gathered all together, and took his journey into a far country, and there wasted his substance with riotous living." },
+      { book: "Luke", chapter: 15, verse: 14, text: "And when he had spent all, there arose a mighty famine in that land; and he began to be in want." },
+      { book: "Luke", chapter: 15, verse: 15, text: "And he went and joined himself to a citizen of that country; and he sent him into his fields to feed swine." },
+      { book: "Luke", chapter: 15, verse: 16, text: "And he would fain have filled his belly with the husks that the swine did eat: and no man gave unto him." },
+      { book: "Luke", chapter: 15, verse: 17, text: "And when he came to himself, he said, How many hired servants of my father's have bread enough and to spare, and I perish with hunger!" },
+      { book: "Luke", chapter: 15, verse: 18, text: "I will arise and go to my father, and will say unto him, Father, I have sinned against heaven, and before thee," },
+      { book: "Luke", chapter: 15, verse: 19, text: "And am no more worthy to be called thy son: make me as one of thy hired servants." },
+      { book: "Luke", chapter: 15, verse: 20, text: "And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him." },
+      { book: "Luke", chapter: 15, verse: 21, text: "And the son said unto him, Father, I have sinned against heaven, and in thy sight, and am no more worthy to be called thy son." },
+      { book: "Luke", chapter: 15, verse: 22, text: "But the father said to his servants, Bring forth the best robe, and put it on him; and put a ring on his hand, and shoes on his feet:" },
+      { book: "Luke", chapter: 15, verse: 23, text: "And bring hither the fatted calf, and kill it; and let us eat, and be merry:" },
+      { book: "Luke", chapter: 15, verse: 24, text: "For this my son was dead, and is alive again; he was lost, and is found. And they began to be merry." },
+      { book: "Luke", chapter: 15, verse: 25, text: "Now his elder son was in the field: and as he came and drew nigh to the house, he heard musick and dancing." },
+      { book: "Luke", chapter: 15, verse: 26, text: "And he called one of the servants, and asked what these things meant." },
+      { book: "Luke", chapter: 15, verse: 27, text: "And he said unto him, Thy brother is come; and thy father hath killed the fatted calf, because he hath received him safe and sound." },
+      { book: "Luke", chapter: 15, verse: 28, text: "And he was angry, and would not go in: therefore came his father out, and intreated him." },
+      { book: "Luke", chapter: 15, verse: 29, text: "And he answering said to his father, Lo, these many years do I serve thee, neither transgressed I at any time thy commandment: and yet thou never gavest me a kid, that I might make merry with my friends:" },
+      { book: "Luke", chapter: 15, verse: 30, text: "But as soon as this thy son was come, which hath devoured thy living with harlots, thou hast killed for him the fatted calf." },
+      { book: "Luke", chapter: 15, verse: 31, text: "And he said unto him, Son, thou art ever with me, and all that I have is thine." },
+      { book: "Luke", chapter: 15, verse: 32, text: "It was meet that we should make merry, and be glad: for this thy brother was dead, and is alive again; and was lost, and is found." },
+    ],
+  },
+  {
     reference: "Hosea 3 (NKJV)",
     verses: [
       { book: "Hosea", chapter: 3, verse: 1, text: "Then the LORD said to me, \"Go again, love a woman who is loved by a lover and is committing adultery, just like the love of the LORD for the children of Israel, who look to other gods and love the raisin cakes of the pagans.\"" },
@@ -90,6 +153,7 @@ function ScriptureCards() {
   const [theme, setTheme] = useState<Theme>("light");
   const [presenting, setPresenting] = useState(false);
   const [started, setStarted] = useState(false);
+  const [showPrevious, setShowPrevious] = useState(false);
   const touchStart = useRef<number | null>(null);
 
   useEffect(() => {
@@ -202,7 +266,7 @@ function ScriptureCards() {
           One verse at a time. Choose a passage to start reading:
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          {PASSAGES.map((passage) => (
+          {PASSAGES.slice(0, 2).map((passage) => (
             <button
               key={passage.reference}
               onClick={() => startWith(passage)}
@@ -212,6 +276,30 @@ function ScriptureCards() {
             </button>
           ))}
         </div>
+
+        <div className="mt-6">
+          <button
+            onClick={() => setShowPrevious(!showPrevious)}
+            className="text-xs uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition flex items-center gap-2 mx-auto"
+          >
+            <ChevronRight className={`h-3 w-3 transition-transform ${showPrevious ? "rotate-90" : ""}`} />
+            {showPrevious ? "Hide Previous" : "Read Previous"}
+          </button>
+        </div>
+
+        {showPrevious && (
+          <div className="mt-4 flex flex-col sm:flex-row gap-4">
+            {PASSAGES.slice(2).map((passage) => (
+              <button
+                key={passage.reference}
+                onClick={() => startWith(passage)}
+                className="h-12 px-6 rounded-full border border-border text-foreground text-sm font-medium tracking-wide hover:bg-accent transition"
+              >
+                {passage.reference}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     );
   }
