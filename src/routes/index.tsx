@@ -19,7 +19,7 @@ type PassageData = { reference: string; verses: Verse[] };
 
 const PASSAGES: PassageData[] = [
   {
-    reference: "Song of Solomon 2 (WEB)",
+    reference: "Song of Solomon 2",
     verses: [
       { book: "Song of Solomon", chapter: 2, verse: 1, text: "I am a rose of Sharon, a lily of the valleys." },
       { book: "Song of Solomon", chapter: 2, verse: 2, text: "As a lily among thorns, so is my love among the daughters." },
