@@ -433,7 +433,7 @@ function ScriptureCards() {
           One verse at a time. Choose a passage to start reading:
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          {PASSAGES.slice(0, 1).map((passage) => (
+          {PASSAGES.slice(0, 2).map((passage) => (
             <button
               key={passage.reference}
               onClick={() => startWith(passage)}
@@ -456,7 +456,7 @@ function ScriptureCards() {
 
         {showPrevious && (
           <div className="mt-4 flex flex-col sm:flex-row gap-4">
-            {PASSAGES.slice(1).map((passage) => (
+            {PASSAGES.slice(2).map((passage) => (
               <button
                 key={passage.reference}
                 onClick={() => startWith(passage)}
