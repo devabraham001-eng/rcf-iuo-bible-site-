@@ -19,6 +19,73 @@ type PassageData = { reference: string; verses: Verse[] };
 
 const PASSAGES: PassageData[] = [
   {
+    reference: "Luke 15 (KJV)",
+    verses: [
+      { book: "Luke", chapter: 15, verse: 1, text: "Then drew near unto him all the publicans and sinners for to hear him." },
+      { book: "Luke", chapter: 15, verse: 2, text: "And the Pharisees and scribes murmured, saying, This man receiveth sinners, and eateth with them." },
+      { book: "Luke", chapter: 15, verse: 3, text: "And he spake this parable unto them, saying," },
+      { book: "Luke", chapter: 15, verse: 4, text: "What man of you, having an hundred sheep, if he lose one of them, doth not leave the ninety and nine in the wilderness, and go after that which is lost, until he find it?" },
+      { book: "Luke", chapter: 15, verse: 5, text: "And when he hath found it, he layeth it on his shoulders, rejoicing." },
+      { book: "Luke", chapter: 15, verse: 6, text: "And when he cometh home, he calleth together his friends and neighbours, saying unto them, Rejoice with me; for I have found my sheep which was lost." },
+      { book: "Luke", chapter: 15, verse: 7, text: "I say unto you, that likewise joy shall be in heaven over one sinner that repenteth, more than over ninety and nine just persons, which need no repentance." },
+      { book: "Luke", chapter: 15, verse: 8, text: "Either what woman having ten pieces of silver, if she lose one piece, doth not light a candle, and sweep the house, and seek diligently till she find it?" },
+      { book: "Luke", chapter: 15, verse: 9, text: "And when she hath found it, she calleth her friends and her neighbours together, saying, Rejoice with me; for I have found the piece which I had lost." },
+      { book: "Luke", chapter: 15, verse: 10, text: "Likewise, I say unto you, there is joy in the presence of the angels of God over one sinner that repenteth." },
+      { book: "Luke", chapter: 15, verse: 11, text: "And he said, A certain man had two sons:" },
+      { book: "Luke", chapter: 15, verse: 12, text: "And the younger of them said to his father, Father, give me the portion of goods that falleth to me. And he divided unto them his living." },
+      { book: "Luke", chapter: 15, verse: 13, text: "And not many days after the younger son gathered all together, and took his journey into a far country, and there wasted his substance with riotous living." },
+      { book: "Luke", chapter: 15, verse: 14, text: "And when he had spent all, there arose a mighty famine in that land; and he began to be in want." },
+      { book: "Luke", chapter: 15, verse: 15, text: "And he went and joined himself to a citizen of that country; and he sent him into his fields to feed swine." },
+      { book: "Luke", chapter: 15, verse: 16, text: "And he would fain have filled his belly with the husks that the swine did eat: and no man gave unto him." },
+      { book: "Luke", chapter: 15, verse: 17, text: "And when he came to himself, he said, How many hired servants of my father's have bread enough and to spare, and I perish with hunger!" },
+      { book: "Luke", chapter: 15, verse: 18, text: "I will arise and go to my father, and will say unto him, Father, I have sinned against heaven, and before thee," },
+      { book: "Luke", chapter: 15, verse: 19, text: "And am no more worthy to be called thy son: make me as one of thy hired servants." },
+      { book: "Luke", chapter: 15, verse: 20, text: "And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him." },
+      { book: "Luke", chapter: 15, verse: 21, text: "And the son said unto him, Father, I have sinned against heaven, and in thy sight, and am no more worthy to be called thy son." },
+      { book: "Luke", chapter: 15, verse: 22, text: "But the father said to his servants, Bring forth the best robe, and put it on him; and put a ring on his hand, and shoes on his feet:" },
+      { book: "Luke", chapter: 15, verse: 23, text: "And bring hither the fatted calf, and kill it; and let us eat, and be merry:" },
+      { book: "Luke", chapter: 15, verse: 24, text: "For this my son was dead, and is alive again; he was lost, and is found. And they began to be merry." },
+      { book: "Luke", chapter: 15, verse: 25, text: "Now his elder son was in the field: and as he came and drew nigh to the house, he heard musick and dancing." },
+      { book: "Luke", chapter: 15, verse: 26, text: "And he called one of the servants, and asked what these things meant." },
+      { book: "Luke", chapter: 15, verse: 27, text: "And he said unto him, Thy brother is come; and thy father hath killed the fatted calf, because he hath received him safe and sound." },
+      { book: "Luke", chapter: 15, verse: 28, text: "And he was angry, and would not go in: therefore came his father out, and intreated him." },
+      { book: "Luke", chapter: 15, verse: 29, text: "And he answering said to his father, Lo, these many years do I serve thee, neither transgressed I at any time thy commandment: and yet thou never gavest me a kid, that I might make merry with my friends:" },
+      { book: "Luke", chapter: 15, verse: 30, text: "But as soon as this thy son was come, which hath devoured thy living with harlots, thou hast killed for him the fatted calf." },
+      { book: "Luke", chapter: 15, verse: 31, text: "And he said unto him, Son, thou art ever with me, and all that I have is thine." },
+      { book: "Luke", chapter: 15, verse: 32, text: "It was meet that we should make merry, and be glad: for this thy brother was dead, and is alive again; and was lost, and is found." },
+    ],
+  },
+  {
+    reference: "Colossians 3 (KJV)",
+    verses: [
+      { book: "Colossians", chapter: 3, verse: 1, text: "If ye then be risen with Christ, seek those things which are above, where Christ sitteth on the right hand of God." },
+      { book: "Colossians", chapter: 3, verse: 2, text: "Set your affection on things above, not on things on the earth." },
+      { book: "Colossians", chapter: 3, verse: 3, text: "For ye are dead, and your life is hid with Christ in God." },
+      { book: "Colossians", chapter: 3, verse: 4, text: "When Christ, who is our life, shall appear, then shall ye also appear with him in glory." },
+      { book: "Colossians", chapter: 3, verse: 5, text: "Mortify therefore your members which are upon the earth; fornication, uncleanness, inordinate affection, evil concupiscence, and covetousness, which is idolatry:" },
+      { book: "Colossians", chapter: 3, verse: 6, text: "For which things' sake the wrath of God cometh on the children of disobedience:" },
+      { book: "Colossians", chapter: 3, verse: 7, text: "In the which ye also walked some time, when ye lived in them." },
+      { book: "Colossians", chapter: 3, verse: 8, text: "But now ye also put off all these; anger, wrath, malice, blasphemy, filthy communication out of your mouth." },
+      { book: "Colossians", chapter: 3, verse: 9, text: "Lie not one to another, seeing that ye have put off the old man with his deeds;" },
+      { book: "Colossians", chapter: 3, verse: 10, text: "And have put on the new man, which is renewed in knowledge after the image of him that created him:" },
+      { book: "Colossians", chapter: 3, verse: 11, text: "Where there is neither Greek nor Jew, circumcision nor uncircumcision, Barbarian, Scythian, bond nor free: but Christ is all, and in all." },
+      { book: "Colossians", chapter: 3, verse: 12, text: "Put on therefore, as the elect of God, holy and beloved, bowels of mercies, kindness, humbleness of mind, meekness, longsuffering;" },
+      { book: "Colossians", chapter: 3, verse: 13, text: "Forbearing one another, and forgiving one another, if any man have a quarrel against any: even as Christ forgave you, so also do ye." },
+      { book: "Colossians", chapter: 3, verse: 14, text: "And above all these things put on charity, which is the bond of perfectness." },
+      { book: "Colossians", chapter: 3, verse: 15, text: "And let the peace of God rule in your hearts, to the which also ye are called in one body; and be ye thankful." },
+      { book: "Colossians", chapter: 3, verse: 16, text: "Let the word of Christ dwell in you richly in all wisdom; teaching and admonishing one another in psalms and hymns and spiritual songs, singing with grace in your hearts to the Lord." },
+      { book: "Colossians", chapter: 3, verse: 17, text: "And whatsoever ye do in word or deed, do all in the name of the Lord Jesus, giving thanks to God and the Father by him." },
+      { book: "Colossians", chapter: 3, verse: 18, text: "Wives, submit yourselves unto your own husbands, as it is fit in the Lord." },
+      { book: "Colossians", chapter: 3, verse: 19, text: "Husbands, love your wives, and be not bitter against them." },
+      { book: "Colossians", chapter: 3, verse: 20, text: "Children, obey your parents in all things: for this is well pleasing unto the Lord." },
+      { book: "Colossians", chapter: 3, verse: 21, text: "Fathers, provoke not your children to anger, lest they be discouraged." },
+      { book: "Colossians", chapter: 3, verse: 22, text: "Servants, obey in all things your masters according to the flesh; not with eyeservice, as menpleasers; but in singleness of heart, fearing God:" },
+      { book: "Colossians", chapter: 3, verse: 23, text: "And whatsoever ye do, do it heartily, as to the Lord, and not unto men;" },
+      { book: "Colossians", chapter: 3, verse: 24, text: "Knowing that of the Lord ye shall receive the reward of the inheritance: for ye serve the Lord Christ." },
+      { book: "Colossians", chapter: 3, verse: 25, text: "But he that doeth wrong shall receive for the wrong which he hath done: and there is no respect of persons." },
+    ],
+  },
+  {
     reference: "Matthew 18 (KJV)",
     verses: [
       { book: "Matthew", chapter: 18, verse: 1, text: "At the same time came the disciples unto Jesus, saying, Who is the greatest in the kingdom of heaven?" },
@@ -854,7 +921,7 @@ function ScriptureCards() {
           One verse at a time. Choose a passage to start reading:
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          {PASSAGES.slice(0, 1).map((passage) => (
+          {PASSAGES.slice(0, 2).map((passage) => (
             <button
               key={passage.reference}
               onClick={() => startWith(passage)}
@@ -877,7 +944,7 @@ function ScriptureCards() {
 
         {showPrevious && (
           <div className="mt-4 flex flex-col sm:flex-row gap-4">
-            {PASSAGES.slice(1).map((passage) => (
+            {PASSAGES.slice(2).map((passage) => (
               <button
                 key={passage.reference}
                 onClick={() => startWith(passage)}
