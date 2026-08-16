@@ -2,14 +2,11 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   ChevronLeft,
   ChevronRight,
-  Search,
   Sun,
   Moon,
   BookOpen,
   Maximize2,
   Minimize2,
-  Loader2,
-  X,
 } from "lucide-react";
 
 type Verse = { book: string; chapter: number; verse: number; text: string };
@@ -935,9 +932,6 @@ function ScriptureCards() {
   const [reference, setReference] = useState<string>(PASSAGES[0].reference);
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState<1 | -1>(1);
-  const [query, setQuery] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
   const [theme, setTheme] = useState<Theme>("light");
   const [presenting, setPresenting] = useState(false);
   const [started, setStarted] = useState(false);
@@ -979,36 +973,6 @@ function ScriptureCards() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [go, presenting]);
-
-  const search = useCallback(async (raw: string) => {
-    const passage = raw.trim();
-    if (!passage) return;
-    setLoading(true);
-    setError(null);
-    try {
-      const res = await fetch(`https://bible-api.com/${encodeURIComponent(passage)}`);
-      if (!res.ok) throw new Error("Passage not found");
-      const data = await res.json();
-      if (!data.verses || !Array.isArray(data.verses) || data.verses.length === 0) {
-        throw new Error("No verses returned");
-      }
-      const mapped: Verse[] = data.verses.map((v: any) => ({
-        book: v.book_name,
-        chapter: v.chapter,
-        verse: v.verse,
-        text: String(v.text).replace(/\s+/g, " ").trim(),
-      }));
-      setVerses(mapped);
-      setReference(data.reference || passage);
-      setIndex(0);
-      setDirection(1);
-      setQuery("");
-    } catch (e: any) {
-      setError(e?.message || "Could not load passage. Try 'John 1' or 'Romans 8'.");
-    } finally {
-      setLoading(false);
-    }
-  }, []);
 
   const startWith = useCallback((passage: PassageData) => {
     setVerses(passage.verses);
@@ -1123,26 +1087,6 @@ function ScriptureCards() {
             </div>
           </div>
 
-          <form
-            className="flex-1 max-w-xl mx-auto relative"
-            onSubmit={(e) => { e.preventDefault(); search(query); }}
-          >
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <input
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder='Search a passage — e.g. "Genesis 1" or "Romans 8"'
-              className="w-full h-11 pl-10 pr-24 rounded-full bg-card border border-border focus:outline-none focus:ring-2 focus:ring-ring/50 text-sm placeholder:text-muted-foreground"
-            />
-            <button
-              type="submit"
-              disabled={loading || !query.trim()}
-              className="absolute right-1.5 top-1/2 -translate-y-1/2 h-8 px-4 rounded-full bg-primary text-primary-foreground text-xs font-medium disabled:opacity-40 hover:opacity-90 transition"
-            >
-              {loading ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : "Go"}
-            </button>
-          </form>
-
           <div className="flex items-center gap-1 shrink-0">
             <ThemeButton active={theme === "light"} onClick={() => setTheme("light")} label="Light">
               <Sun className="h-4 w-4" />
@@ -1173,13 +1117,6 @@ function ScriptureCards() {
         >
           <Minimize2 className="h-4 w-4" />
         </button>
-      )}
-
-      {/* Error */}
-      {error && !presenting && (
-        <div className="mx-auto mt-4 px-4 py-2 rounded-full bg-destructive/10 text-destructive text-sm flex items-center gap-2">
-          <X className="h-4 w-4" /> {error}
-        </div>
       )}
 
       {/* Card area */}
