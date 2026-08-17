@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   ChevronLeft,
   ChevronRight,
+  ChevronDown,
   Sun,
   Moon,
   BookOpen,
@@ -1109,7 +1110,7 @@ function ScriptureCards() {
         <p className="mt-6 max-w-md text-muted-foreground">
           One verse at a time. Choose a passage to start reading:
         </p>
-        <div className="mt-10 flex flex-col sm:flex-row gap-4">
+        <div className="mt-10 flex flex-col sm:flex-row flex-wrap justify-center gap-4">
           {PASSAGES.slice(0, 2).map((passage) => (
             <button
               key={passage.reference}
@@ -1132,7 +1133,7 @@ function ScriptureCards() {
         </div>
 
         {showPrevious && (
-          <div className="mt-4 flex flex-col sm:flex-row gap-4">
+          <div className="mt-4 flex flex-col sm:flex-row flex-wrap justify-center gap-4">
             {PASSAGES.slice(2).map((passage) => (
               <button
                 key={passage.reference}
@@ -1160,7 +1161,7 @@ function ScriptureCards() {
 
       {/* Header */}
       {!presenting && (
-        <header className="pt-6 px-4 md:px-8 flex items-center gap-3 md:gap-6">
+        <header className="pt-6 px-4 md:px-8 flex flex-wrap items-center gap-3 md:gap-6">
           <div className="flex items-center gap-2 shrink-0">
             <button
               onClick={() => setStarted(false)}
@@ -1179,7 +1180,7 @@ function ScriptureCards() {
             </div>
           </div>
 
-          <div className="flex items-center gap-1 shrink-0">
+          <div className="flex flex-wrap items-center justify-end gap-1 ml-auto shrink-0">
             <VersionSelect value={version} onChange={switchVersion} loading={versionLoading} />
             <ThemeButton active={theme === "light"} onClick={() => setTheme("light")} label="Light">
               <Sun className="h-4 w-4" />
@@ -1316,22 +1317,25 @@ function VersionSelect({
   value, onChange, loading,
 }: { value: string; onChange: (code: string) => void; loading: boolean }) {
   return (
-    <div className="flex items-center gap-1">
+    <div className="flex items-center gap-1.5">
       {loading && <Loader2 className="h-3.5 w-3.5 animate-spin text-muted-foreground" />}
-      <select
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        disabled={loading}
-        title="Bible version"
-        aria-label="Bible version"
-        className="h-9 rounded-full border border-border bg-card text-xs font-medium tracking-wide text-muted-foreground hover:bg-accent hover:text-foreground transition px-3 pr-6 cursor-pointer focus:outline-none focus:ring-2 focus:ring-ring/50 disabled:opacity-40"
-      >
-        {VERSIONS.map((v) => (
-          <option key={v.code} value={v.code}>
-            {v.label}
-          </option>
-        ))}
-      </select>
+      <div className="relative">
+        <select
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          disabled={loading}
+          title="Bible version"
+          aria-label="Bible version"
+          className="h-9 appearance-none rounded-full border border-border bg-card pl-3 pr-7 text-xs font-medium tracking-wide text-muted-foreground hover:bg-accent hover:text-foreground transition cursor-pointer focus:outline-none focus:ring-2 focus:ring-ring/50 disabled:opacity-40"
+        >
+          {VERSIONS.map((v) => (
+            <option key={v.code} value={v.code}>
+              {v.label}
+            </option>
+          ))}
+        </select>
+        <ChevronDown className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground" />
+      </div>
     </div>
   );
 }
