@@ -7,12 +7,23 @@ import {
   BookOpen,
   Maximize2,
   Minimize2,
+  Loader2,
 } from "lucide-react";
 
 type Verse = { book: string; chapter: number; verse: number; text: string };
 type Theme = "light" | "sepia" | "dark";
 
 type PassageData = { reference: string; verses: Verse[] };
+
+const VERSIONS = [
+  { code: "kjv", label: "KJV" },
+  { code: "web", label: "WEB" },
+  { code: "asv", label: "ASV" },
+  { code: "bbe", label: "BBE" },
+  { code: "darby", label: "DARBY" },
+  { code: "ylt", label: "YLT" },
+  { code: "wmb", label: "WMB" },
+];
 
 const PASSAGES: PassageData[] = [
   {
@@ -927,11 +938,29 @@ function applyTheme(theme: Theme) {
   if (theme === "sepia") root.classList.add("sepia");
 }
 
+async function fetchPassageText(baseRef: string, verseCount: number, code: string): Promise<Verse[]> {
+  const res = await fetch(`https://bible-api.com/${encodeURIComponent(`${baseRef}:1-${verseCount}`)}?translation=${code}`);
+  if (!res.ok) throw new Error("Passage not found");
+  const data = await res.json();
+  if (!data.verses || !Array.isArray(data.verses) || data.verses.length === 0) {
+    throw new Error("No verses returned");
+  }
+  return data.verses.map((v: { book_name: string; chapter: number; verse: number; text: string }) => ({
+    book: v.book_name,
+    chapter: v.chapter,
+    verse: v.verse,
+    text: String(v.text).replace(/\s+/g, " ").trim(),
+  }));
+}
+
 function ScriptureCards() {
   const [verses, setVerses] = useState<Verse[]>(PASSAGES[0].verses);
   const [reference, setReference] = useState<string>(PASSAGES[0].reference);
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState<1 | -1>(1);
+  const [version, setVersion] = useState<string>("kjv");
+  const [versionLoading, setVersionLoading] = useState(false);
+  const [versionError, setVersionError] = useState<string | null>(null);
   const [theme, setTheme] = useState<Theme>("light");
   const [presenting, setPresenting] = useState(false);
   const [started, setStarted] = useState(false);
@@ -944,9 +973,18 @@ function ScriptureCards() {
   }, []);
 
   useEffect(() => {
+    const saved = typeof window !== "undefined" ? localStorage.getItem("sc-version") : null;
+    if (saved && VERSIONS.some((v) => v.code === saved)) setVersion(saved);
+  }, []);
+
+  useEffect(() => {
     applyTheme(theme);
     if (typeof window !== "undefined") localStorage.setItem("sc-theme", theme);
   }, [theme]);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") localStorage.setItem("sc-version", version);
+  }, [version]);
 
   const total = verses.length;
   const current = verses[index];
@@ -974,13 +1012,59 @@ function ScriptureCards() {
     return () => window.removeEventListener("keydown", onKey);
   }, [go, presenting]);
 
-  const startWith = useCallback((passage: PassageData) => {
-    setVerses(passage.verses);
-    setReference(passage.reference);
-    setIndex(0);
-    setDirection(1);
-    setStarted(true);
-  }, []);
+  const startWith = useCallback(
+    async (passage: PassageData) => {
+      setVerses(passage.verses);
+      setReference(passage.reference);
+      setIndex(0);
+      setDirection(1);
+      setStarted(true);
+      if (version !== "kjv") {
+        const meta = VERSIONS.find((v) => v.code === version);
+        if (meta) {
+          setVersionLoading(true);
+          setVersionError(null);
+          const baseRef = passage.reference.replace(/\s*\([^)]*\)\s*$/, "").trim();
+          try {
+            const mapped = await fetchPassageText(baseRef, passage.verses.length, version);
+            setVerses(mapped);
+            setReference(`${baseRef} (${meta.label})`);
+          } catch {
+            setVersionError(`Could not load ${meta.label} — showing ${passage.reference} instead.`);
+          } finally {
+            setVersionLoading(false);
+          }
+        }
+      }
+    },
+    [version],
+  );
+
+  const switchVersion = useCallback(
+    async (code: string) => {
+      const meta = VERSIONS.find((v) => v.code === code);
+      if (!meta || code === version || versionLoading) return;
+      const prev = version;
+      setVersion(code);
+      if (!started) return;
+      setVersionLoading(true);
+      setVersionError(null);
+      const baseRef = reference.replace(/\s*\([^)]*\)\s*$/, "").trim();
+      try {
+        const mapped = await fetchPassageText(baseRef, total, code);
+        setVerses(mapped);
+        setReference(`${baseRef} (${meta.label})`);
+        setIndex(0);
+        setDirection(1);
+      } catch {
+        setVersion(prev);
+        setVersionError(`Could not load ${meta.label} — check your connection.`);
+      } finally {
+        setVersionLoading(false);
+      }
+    },
+    [version, versionLoading, started, reference, total],
+  );
 
   const progress = total > 0 ? ((index + 1) / total) * 100 : 0;
 
@@ -1006,7 +1090,15 @@ function ScriptureCards() {
 
   if (!started) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground px-6 text-center">
+      <div className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground px-6 text-center relative">
+        <div className="absolute top-6 right-6">
+          <VersionSelect value={version} onChange={switchVersion} loading={versionLoading} />
+        </div>
+        {versionError && (
+          <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-full bg-destructive/10 text-destructive text-sm flex items-center gap-2 shadow-sm">
+            {versionError}
+          </div>
+        )}
         <div className="h-14 w-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-8">
           <BookOpen className="h-7 w-7 text-primary" />
         </div>
@@ -1088,6 +1180,7 @@ function ScriptureCards() {
           </div>
 
           <div className="flex items-center gap-1 shrink-0">
+            <VersionSelect value={version} onChange={switchVersion} loading={versionLoading} />
             <ThemeButton active={theme === "light"} onClick={() => setTheme("light")} label="Light">
               <Sun className="h-4 w-4" />
             </ThemeButton>
@@ -1107,6 +1200,12 @@ function ScriptureCards() {
             </button>
           </div>
         </header>
+      )}
+
+      {versionError && (
+        <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-full bg-destructive/10 text-destructive text-sm flex items-center gap-2 shadow-sm">
+          {versionError}
+        </div>
       )}
 
       {presenting && (
@@ -1210,6 +1309,30 @@ function ThemeButton({
     >
       {children}
     </button>
+  );
+}
+
+function VersionSelect({
+  value, onChange, loading,
+}: { value: string; onChange: (code: string) => void; loading: boolean }) {
+  return (
+    <div className="flex items-center gap-1">
+      {loading && <Loader2 className="h-3.5 w-3.5 animate-spin text-muted-foreground" />}
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        disabled={loading}
+        title="Bible version"
+        aria-label="Bible version"
+        className="h-9 rounded-full border border-border bg-card text-xs font-medium tracking-wide text-muted-foreground hover:bg-accent hover:text-foreground transition px-3 pr-6 cursor-pointer focus:outline-none focus:ring-2 focus:ring-ring/50 disabled:opacity-40"
+      >
+        {VERSIONS.map((v) => (
+          <option key={v.code} value={v.code}>
+            {v.label}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 }
 
