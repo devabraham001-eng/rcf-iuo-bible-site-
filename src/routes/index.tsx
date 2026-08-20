@@ -28,6 +28,86 @@ const VERSIONS = [
 
 const PASSAGES: PassageData[] = [
   {
+    reference: "Galatians 4 (KJV)",
+    verses: [
+      { book: "Galatians", chapter: 4, verse: 1, text: "Now I say, That the heir, as long as he is a child, differeth nothing from a servant, though he be lord of all;" },
+      { book: "Galatians", chapter: 4, verse: 2, text: "But is under tutors and governors until the time appointed of the father." },
+      { book: "Galatians", chapter: 4, verse: 3, text: "Even so we, when we were children, were in bondage under the elements of the world:" },
+      { book: "Galatians", chapter: 4, verse: 4, text: "But when the fulness of the time was come, God sent forth his Son, made of a woman, made under the law," },
+      { book: "Galatians", chapter: 4, verse: 5, text: "To redeem them that were under the law, that we might receive the adoption of sons." },
+      { book: "Galatians", chapter: 4, verse: 6, text: "And because ye are sons, God hath sent forth the Spirit of his Son into your hearts, crying, Abba, Father." },
+      { book: "Galatians", chapter: 4, verse: 7, text: "Wherefore thou art no more a servant, but a son; and if a son, then an heir of God through Christ." },
+      { book: "Galatians", chapter: 4, verse: 8, text: "Howbeit then, when ye knew not God, ye did service unto them which by nature are no gods." },
+      { book: "Galatians", chapter: 4, verse: 9, text: "But now, after that ye have known God, or rather are known of God, how turn ye again to the weak and beggarly elements, whereunto ye desire again to be in bondage?" },
+      { book: "Galatians", chapter: 4, verse: 10, text: "Ye observe days, and months, and times, and years." },
+      { book: "Galatians", chapter: 4, verse: 11, text: "I am afraid of you, lest I have bestowed upon you labour in vain." },
+      { book: "Galatians", chapter: 4, verse: 12, text: "Brethren, I beseech you, be as I am; for I am as ye are: ye have not injured me at all." },
+      { book: "Galatians", chapter: 4, verse: 13, text: "Ye know how through infirmity of the flesh I preached the gospel unto you at the first." },
+      { book: "Galatians", chapter: 4, verse: 14, text: "And my temptation which was in my flesh ye despised not, nor rejected; but received me as an angel of God, even as Christ Jesus." },
+      { book: "Galatians", chapter: 4, verse: 15, text: "Where is then the blessedness ye spake of? for I bear you record, that, if it had been possible, ye would have plucked out your own eyes, and have given them to me." },
+      { book: "Galatians", chapter: 4, verse: 16, text: "Am I therefore become your enemy, because I tell you the truth?" },
+      { book: "Galatians", chapter: 4, verse: 17, text: "They zealously affect you, but not well; yea, they would exclude you, that ye might affect them." },
+      { book: "Galatians", chapter: 4, verse: 18, text: "But it is good to be zealously affected always in a good thing, and not only when I am present with you." },
+      { book: "Galatians", chapter: 4, verse: 19, text: "My little children, of whom I travail in birth again until Christ be formed in you," },
+      { book: "Galatians", chapter: 4, verse: 20, text: "I desire to be present with you now, and to change my voice; for I stand in doubt of you." },
+      { book: "Galatians", chapter: 4, verse: 21, text: "Tell me, ye that desire to be under the law, do ye not hear the law?" },
+      { book: "Galatians", chapter: 4, verse: 22, text: "For it is written, that Abraham had two sons, the one by a bondmaid, the other by a freewoman." },
+      { book: "Galatians", chapter: 4, verse: 23, text: "But he who was of the bondwoman was born after the flesh; but he of the freewoman was by promise." },
+      { book: "Galatians", chapter: 4, verse: 24, text: "Which things are an allegory: for these are the two covenants; the one from the mount Sinai, which gendereth to bondage, which is Agar." },
+      { book: "Galatians", chapter: 4, verse: 25, text: "For this Agar is mount Sinai in Arabia, and answereth to Jerusalem which now is, and is in bondage with her children." },
+      { book: "Galatians", chapter: 4, verse: 26, text: "But Jerusalem which is above is free, which is the mother of us all." },
+      { book: "Galatians", chapter: 4, verse: 27, text: "For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which hath an husband." },
+      { book: "Galatians", chapter: 4, verse: 28, text: "Now we, brethren, as Isaac was, are the children of promise." },
+      { book: "Galatians", chapter: 4, verse: 29, text: "But as then he that was born after the flesh persecuted him that was born after the Spirit, even so it is now." },
+      { book: "Galatians", chapter: 4, verse: 30, text: "Nevertheless what saith the scripture? Cast out the bondwoman and her son: for the son of the bondwoman shall not be heir with the son of the free woman." },
+      { book: "Galatians", chapter: 4, verse: 31, text: "So then, brethren, we are not children of the bondwoman, but of the free." },
+    ],
+  },
+  {
+    reference: "Romans 8 (KJV)",
+    verses: [
+      { book: "Romans", chapter: 8, verse: 1, text: "There is therefore now no condemnation to them which are in Christ Jesus, who walk not after the flesh, but after the Spirit." },
+      { book: "Romans", chapter: 8, verse: 2, text: "For the law of the Spirit of life in Christ Jesus hath made me free from the law of sin and death." },
+      { book: "Romans", chapter: 8, verse: 3, text: "For what the law could not do, in that it was weak through the flesh, God sending his own Son in the likeness of sinful flesh, and for sin, condemned sin in the flesh:" },
+      { book: "Romans", chapter: 8, verse: 4, text: "That the righteousness of the law might be fulfilled in us, who walk not after the flesh, but after the Spirit." },
+      { book: "Romans", chapter: 8, verse: 5, text: "For they that are after the flesh do mind the things of the flesh; but they that are after the Spirit the things of the Spirit." },
+      { book: "Romans", chapter: 8, verse: 6, text: "For to be carnally minded is death; but to be spiritually minded is life and peace." },
+      { book: "Romans", chapter: 8, verse: 7, text: "Because the carnal mind is enmity against God: for it is not subject to the law of God, neither indeed can be." },
+      { book: "Romans", chapter: 8, verse: 8, text: "So then they that are in the flesh cannot please God." },
+      { book: "Romans", chapter: 8, verse: 9, text: "But ye are not in the flesh, but in the Spirit, if so be that the Spirit of God dwell in you. Now if any man have not the Spirit of Christ, he is none of his." },
+      { book: "Romans", chapter: 8, verse: 10, text: "And if Christ be in you, the body is dead because of sin; but the Spirit is life because of righteousness." },
+      { book: "Romans", chapter: 8, verse: 11, text: "But if the Spirit of him that raised up Jesus from the dead dwell in you, he that raised up Christ from the dead shall also quicken your mortal bodies by his Spirit that dwelleth in you." },
+      { book: "Romans", chapter: 8, verse: 12, text: "Therefore, brethren, we are debtors, not to the flesh, to live after the flesh." },
+      { book: "Romans", chapter: 8, verse: 13, text: "For if ye live after the flesh, ye shall die: but if ye through the Spirit do mortify the deeds of the body, ye shall live." },
+      { book: "Romans", chapter: 8, verse: 14, text: "For as many as are led by the Spirit of God, they are the sons of God." },
+      { book: "Romans", chapter: 8, verse: 15, text: "For ye have not received the spirit of bondage again to fear; but ye have received the Spirit of adoption, whereby we cry, Abba, Father." },
+      { book: "Romans", chapter: 8, verse: 16, text: "The Spirit itself beareth witness with our spirit, that we are the children of God:" },
+      { book: "Romans", chapter: 8, verse: 17, text: "And if children, then heirs; heirs of God, and joint-heirs with Christ; if so be that we suffer with him, that we may be also glorified together." },
+      { book: "Romans", chapter: 8, verse: 18, text: "For I reckon that the sufferings of this present time are not worthy to be compared with the glory which shall be revealed in us." },
+      { book: "Romans", chapter: 8, verse: 19, text: "For the earnest expectation of the creature waiteth for the manifestation of the sons of God." },
+      { book: "Romans", chapter: 8, verse: 20, text: "For the creature was made subject to vanity, not willingly, but by reason of him who hath subjected the same in hope," },
+      { book: "Romans", chapter: 8, verse: 21, text: "Because the creature itself also shall be delivered from the bondage of corruption into the glorious liberty of the children of God." },
+      { book: "Romans", chapter: 8, verse: 22, text: "For we know that the whole creation groaneth and travaileth in pain together until now." },
+      { book: "Romans", chapter: 8, verse: 23, text: "And not only they, but ourselves also, which have the firstfruits of the Spirit, even we ourselves groan within ourselves, waiting for the adoption, to wit, the redemption of our body." },
+      { book: "Romans", chapter: 8, verse: 24, text: "For we are saved by hope: but hope that is seen is not hope: for what a man seeth, why doth he yet hope for?" },
+      { book: "Romans", chapter: 8, verse: 25, text: "But if we hope for that we see not, then do we with patience wait for it." },
+      { book: "Romans", chapter: 8, verse: 26, text: "Likewise the Spirit also helpeth our infirmities: for we know not what we should pray for as we ought: but the Spirit itself maketh intercession for us with groanings which cannot be uttered." },
+      { book: "Romans", chapter: 8, verse: 27, text: "And he that searcheth the hearts knoweth what is the mind of the Spirit, because he maketh intercession for the saints according to the will of God." },
+      { book: "Romans", chapter: 8, verse: 28, text: "And we know that all things work together for good to them that love God, to them who are the called according to his purpose." },
+      { book: "Romans", chapter: 8, verse: 29, text: "For whom he did foreknow, he also did predestinate to be conformed to the image of his Son, that he might be the firstborn among many brethren." },
+      { book: "Romans", chapter: 8, verse: 30, text: "Moreover whom he did predestinate, them he also called: and whom he called, them he also justified: and whom he justified, them he also glorified." },
+      { book: "Romans", chapter: 8, verse: 31, text: "What shall we then say to these things? If God be for us, who can be against us?" },
+      { book: "Romans", chapter: 8, verse: 32, text: "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things?" },
+      { book: "Romans", chapter: 8, verse: 33, text: "Who shall lay any thing to the charge of God's elect? It is God that justifieth." },
+      { book: "Romans", chapter: 8, verse: 34, text: "Who is he that condemneth? It is Christ that died, yea rather, that is risen again, who is even at the right hand of God, who also maketh intercession for us." },
+      { book: "Romans", chapter: 8, verse: 35, text: "Who shall separate us from the love of Christ? shall tribulation, or distress, or persecution, or famine, or nakedness, or peril, or sword?" },
+      { book: "Romans", chapter: 8, verse: 36, text: "As it is written, For thy sake we are killed all the day long; we are accounted as sheep for the slaughter." },
+      { book: "Romans", chapter: 8, verse: 37, text: "Nay, in all these things we are more than conquerors through him that loved us." },
+      { book: "Romans", chapter: 8, verse: 38, text: "For I am persuaded, that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, nor things to come," },
+      { book: "Romans", chapter: 8, verse: 39, text: "Nor height, nor depth, nor any other creature, shall be able to separate us from the love of God, which is in Christ Jesus our Lord." },
+    ],
+  },
+  {
     reference: "John 1 (KJV)",
     verses: [
       { book: "John", chapter: 1, verse: 1, text: "In the beginning was the Word, and the Word was with God, and the Word was God." },
@@ -1167,7 +1247,7 @@ function ScriptureCards() {
           One verse at a time. Choose a passage to start reading:
         </p>
         <div className="mt-10 flex flex-col sm:flex-row flex-wrap justify-center gap-4">
-          {PASSAGES.slice(0, 1).map((passage) => (
+          {PASSAGES.slice(0, 2).map((passage) => (
             <button
               key={passage.reference}
               onClick={() => startWith(passage)}
@@ -1190,7 +1270,7 @@ function ScriptureCards() {
 
         {showPrevious && (
           <div className="mt-4 flex flex-col sm:flex-row flex-wrap justify-center gap-4">
-            {PASSAGES.slice(1).map((passage) => (
+            {PASSAGES.slice(2).map((passage) => (
               <button
                 key={passage.reference}
                 onClick={() => startWith(passage)}
