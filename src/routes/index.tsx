@@ -28,6 +28,40 @@ const VERSIONS = [
 
 const PASSAGES: PassageData[] = [
   {
+    reference: "Isaiah 6 (KJV)",
+    verses: [
+      { book: "Isaiah", chapter: 6, verse: 1, text: "In the year that king Uzziah died I saw also the Lord sitting upon a throne, high and lifted up, and his train filled the temple." },
+      { book: "Isaiah", chapter: 6, verse: 2, text: "Above it stood the seraphims: each one had six wings; with twain he covered his face, and with twain he covered his feet, and with twain he did fly." },
+      { book: "Isaiah", chapter: 6, verse: 3, text: "And one cried unto another, and said, Holy, holy, holy, is the LORD of hosts: the whole earth is full of his glory." },
+      { book: "Isaiah", chapter: 6, verse: 4, text: "And the posts of the door moved at the voice of him that cried, and the house was filled with smoke." },
+      { book: "Isaiah", chapter: 6, verse: 5, text: "Then said I, Woe is me! for I am undone; because I am a man of unclean lips, and I dwell in the midst of a people of unclean lips: for mine eyes have seen the King, the LORD of hosts." },
+      { book: "Isaiah", chapter: 6, verse: 6, text: "Then flew one of the seraphims unto me, having a live coal in his hand, which he had taken with the tongs from off the altar:" },
+      { book: "Isaiah", chapter: 6, verse: 7, text: "And he laid it upon my mouth, and said, Lo, this hath touched thy lips; and thine iniquity is taken away, and thy sin purged." },
+      { book: "Isaiah", chapter: 6, verse: 8, text: "Also I heard the voice of the Lord, saying, Whom shall I send, and who will go for us? Then said I, Here am I; send me." },
+      { book: "Isaiah", chapter: 6, verse: 9, text: "And he said, Go, and tell this people, Hear ye indeed, but understand not; and see ye indeed, but perceive not." },
+      { book: "Isaiah", chapter: 6, verse: 10, text: "Make the heart of this people fat, and make their ears heavy, and shut their eyes; lest they see with their eyes, and hear with their ears, and understand with their heart, and convert, and be healed." },
+      { book: "Isaiah", chapter: 6, verse: 11, text: "Then said I, Lord, how long? And he answered, Until the cities be wasted without inhabitant, and the houses without man, and the land be utterly desolate," },
+      { book: "Isaiah", chapter: 6, verse: 12, text: "And the LORD have removed men far away, and there be a great forsaking in the midst of the land." },
+      { book: "Isaiah", chapter: 6, verse: 13, text: "But yet in it shall be a tenth, and it shall return, and shall be eaten: as a teil tree, and as an oak, whose substance is in them, when they cast their leaves: so the holy seed shall be the substance thereof." },
+    ],
+  },
+  {
+    reference: "Revelation 4 (KJV)",
+    verses: [
+      { book: "Revelation", chapter: 4, verse: 1, text: "After this I looked, and, behold, a door was opened in heaven: and the first voice which I heard was as it were of a trumpet talking with me; which said, Come up hither, and I will shew thee things which must be hereafter." },
+      { book: "Revelation", chapter: 4, verse: 2, text: "And immediately I was in the spirit: and, behold, a throne was set in heaven, and one sat on the throne." },
+      { book: "Revelation", chapter: 4, verse: 3, text: "And he that sat was to look upon like a jasper and a sardine stone: and there was a rainbow round about the throne, in sight like unto an emerald." },
+      { book: "Revelation", chapter: 4, verse: 4, text: "And round about the throne were four and twenty seats: and upon the seats I saw four and twenty elders sitting, clothed in white raiment; and they had on their heads crowns of gold." },
+      { book: "Revelation", chapter: 4, verse: 5, text: "And out of the throne proceeded lightnings and thunderings and voices: and there were seven lamps of fire burning before the throne, which are the seven Spirits of God." },
+      { book: "Revelation", chapter: 4, verse: 6, text: "And before the throne there was a sea of glass like unto crystal: and in the midst of the throne, and round about the throne, were four beasts full of eyes before and behind." },
+      { book: "Revelation", chapter: 4, verse: 7, text: "And the first beast was like a lion, and the second beast like a calf, and the third beast had a face as a man, and the fourth beast was like a flying eagle." },
+      { book: "Revelation", chapter: 4, verse: 8, text: "And the four beasts had each of them six wings about him; and they were full of eyes within: and they rest not day and night, saying, Holy, holy, holy, Lord God Almighty, which was, and is, and is to come." },
+      { book: "Revelation", chapter: 4, verse: 9, text: "And when those beasts give glory and honour and thanks to him that sat on the throne, who liveth for ever and ever," },
+      { book: "Revelation", chapter: 4, verse: 10, text: "The four and twenty elders fall down before him that sat on the throne, and worship him that liveth for ever and ever, and cast their crowns before the throne, saying," },
+      { book: "Revelation", chapter: 4, verse: 11, text: "Thou art worthy, O Lord, to receive glory and honour and power: for thou hast created all things, and for thy pleasure they are and were created." },
+    ],
+  },
+  {
     reference: "Galatians 4 (KJV)",
     verses: [
       { book: "Galatians", chapter: 4, verse: 1, text: "Now I say, That the heir, as long as he is a child, differeth nothing from a servant, though he be lord of all;" },
