@@ -28,6 +28,42 @@ const VERSIONS = [
 
 const PASSAGES: PassageData[] = [
   {
+    reference: "Psalm 100 (KJV)",
+    verses: [
+      { book: "Psalms", chapter: 100, verse: 1, text: "Make a joyful noise unto the LORD, all ye lands." },
+      { book: "Psalms", chapter: 100, verse: 2, text: "Serve the LORD with gladness: come before his presence with singing." },
+      { book: "Psalms", chapter: 100, verse: 3, text: "Know ye that the LORD he is God: it is he that hath made us, and not we ourselves; we are his people, and the sheep of his pasture." },
+      { book: "Psalms", chapter: 100, verse: 4, text: "Enter into his gates with thanksgiving, and into his courts with praise: be thankful unto him, and bless his name." },
+      { book: "Psalms", chapter: 100, verse: 5, text: "For the LORD is good; his mercy is everlasting; and his truth endureth to all generations." },
+    ],
+  },
+  {
+    reference: "Romans 12 (KJV)",
+    verses: [
+      { book: "Romans", chapter: 12, verse: 1, text: "I beseech you therefore, brethren, by the mercies of God, that ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service." },
+      { book: "Romans", chapter: 12, verse: 2, text: "And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God." },
+      { book: "Romans", chapter: 12, verse: 3, text: "For I say, through the grace given unto me, to every man that is among you, not to think of himself more highly than he ought to think; but to think soberly, according as God hath dealt to every man the measure of faith." },
+      { book: "Romans", chapter: 12, verse: 4, text: "For as we have many members in one body, and all members have not the same office:" },
+      { book: "Romans", chapter: 12, verse: 5, text: "So we, being many, are one body in Christ, and every one members one of another." },
+      { book: "Romans", chapter: 12, verse: 6, text: "Having then gifts differing according to the grace that is given to us, whether prophecy, let us prophesy according to the proportion of faith;" },
+      { book: "Romans", chapter: 12, verse: 7, text: "Or ministry, let us wait on our ministering: or he that teacheth, on teaching;" },
+      { book: "Romans", chapter: 12, verse: 8, text: "Or he that exhorteth, on exhortation: he that giveth, let him do it with simplicity; he that ruleth, with diligence; he that sheweth mercy, with cheerfulness." },
+      { book: "Romans", chapter: 12, verse: 9, text: "Let love be without dissimulation. Abhor that which is evil; cleave to that which is good." },
+      { book: "Romans", chapter: 12, verse: 10, text: "Be kindly affectioned one to another with brotherly love; in honour preferring one another;" },
+      { book: "Romans", chapter: 12, verse: 11, text: "Not slothful in business; fervent in spirit; serving the Lord;" },
+      { book: "Romans", chapter: 12, verse: 12, text: "Rejoicing in hope; patient in tribulation; continuing instant in prayer;" },
+      { book: "Romans", chapter: 12, verse: 13, text: "Distributing to the necessity of saints; given to hospitality." },
+      { book: "Romans", chapter: 12, verse: 14, text: "Bless them which persecute you: bless, and curse not." },
+      { book: "Romans", chapter: 12, verse: 15, text: "Rejoice with them that do rejoice, and weep with them that weep." },
+      { book: "Romans", chapter: 12, verse: 16, text: "Be of the same mind one toward another. Mind not high things, but condescend to men of low estate. Be not wise in your own conceits." },
+      { book: "Romans", chapter: 12, verse: 17, text: "Recompense to no man evil for evil. Provide things honest in the sight of all men." },
+      { book: "Romans", chapter: 12, verse: 18, text: "If it be possible, as much as lieth in you, live peaceably with all men." },
+      { book: "Romans", chapter: 12, verse: 19, text: "Dearly beloved, avenge not yourselves, but rather give place unto wrath: for it is written, Vengeance is mine; I will repay, saith the Lord." },
+      { book: "Romans", chapter: 12, verse: 20, text: "Therefore if thine enemy hunger, feed him; if he thirst, give him drink: for in so doing thou shalt heap coals of fire on his head." },
+      { book: "Romans", chapter: 12, verse: 21, text: "Be not overcome of evil, but overcome evil with good." },
+    ],
+  },
+  {
     reference: "Isaiah 6 (KJV)",
     verses: [
       { book: "Isaiah", chapter: 6, verse: 1, text: "In the year that king Uzziah died I saw also the Lord sitting upon a throne, high and lifted up, and his train filled the temple." },
