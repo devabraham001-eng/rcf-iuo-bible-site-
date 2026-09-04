@@ -28,6 +28,118 @@ const VERSIONS = [
 
 const PASSAGES: PassageData[] = [
   {
+    reference: "Matthew 26 (KJV)",
+    verses: [
+      { book: "Matthew", chapter: 26, verse: 1, text: "And it came to pass, when Jesus had finished all these sayings, he said unto his disciples," },
+      { book: "Matthew", chapter: 26, verse: 2, text: "Ye know that after two days is the feast of the passover, and the Son of man is betrayed to be crucified." },
+      { book: "Matthew", chapter: 26, verse: 3, text: "Then assembled together the chief priests, and the scribes, and the elders of the people, unto the palace of the high priest, who was called Caiaphas," },
+      { book: "Matthew", chapter: 26, verse: 4, text: "And consulted that they might take Jesus by subtilty, and kill him." },
+      { book: "Matthew", chapter: 26, verse: 5, text: "But they said, Not on the feast day, lest there be an uproar among the people." },
+      { book: "Matthew", chapter: 26, verse: 6, text: "Now when Jesus was in Bethany, in the house of Simon the leper," },
+      { book: "Matthew", chapter: 26, verse: 7, text: "There came unto him a woman having an alabaster box of very precious ointment, and poured it on his head, as he sat at meat." },
+      { book: "Matthew", chapter: 26, verse: 8, text: "But when his disciples saw it, they had indignation, saying, To what purpose is this waste?" },
+      { book: "Matthew", chapter: 26, verse: 9, text: "For this ointment might have been sold for much, and given to the poor." },
+      { book: "Matthew", chapter: 26, verse: 10, text: "When Jesus understood it, he said unto them, Why trouble ye the woman? for she hath wrought a good work upon me." },
+      { book: "Matthew", chapter: 26, verse: 11, text: "For ye have the poor always with you; but me ye have not always." },
+      { book: "Matthew", chapter: 26, verse: 12, text: "For in that she hath poured this ointment on my body, she did it for my burial." },
+      { book: "Matthew", chapter: 26, verse: 13, text: "Verily I say unto you, Wheresoever this gospel shall be preached in the whole world, there shall also this, that this woman hath done, be told for a memorial of her." },
+      { book: "Matthew", chapter: 26, verse: 14, text: "Then one of the twelve, called Judas Iscariot, went unto the chief priests," },
+      { book: "Matthew", chapter: 26, verse: 15, text: "And said unto them, What will ye give me, and I will deliver him unto you? And they covenanted with him for thirty pieces of silver." },
+      { book: "Matthew", chapter: 26, verse: 16, text: "And from that time he sought opportunity to betray him." },
+      { book: "Matthew", chapter: 26, verse: 17, text: "Now the first day of the feast of unleavened bread the disciples came to Jesus, saying unto him, Where wilt thou that we prepare for thee to eat the passover?" },
+      { book: "Matthew", chapter: 26, verse: 18, text: "And he said, Go into the city to such a man, and say unto him, The Master saith, My time is at hand; I will keep the passover at thy house with my disciples." },
+      { book: "Matthew", chapter: 26, verse: 19, text: "And the disciples did as Jesus had appointed them; and they made ready the passover." },
+      { book: "Matthew", chapter: 26, verse: 20, text: "Now when the even was come, he sat down with the twelve." },
+      { book: "Matthew", chapter: 26, verse: 21, text: "And as they did eat, he said, Verily I say unto you, that one of you shall betray me." },
+      { book: "Matthew", chapter: 26, verse: 22, text: "And they were exceeding sorrowful, and began every one of them to say unto him, Lord, is it I?" },
+      { book: "Matthew", chapter: 26, verse: 23, text: "And he answered and said, He that dippeth his hand with me in the dish, the same shall betray me." },
+      { book: "Matthew", chapter: 26, verse: 24, text: "The Son of man goeth as it is written of him: but woe unto that man by whom the Son of man is betrayed! it had been good for that man if he had not been born." },
+      { book: "Matthew", chapter: 26, verse: 25, text: "Then Judas, which betrayed him, answered and said, Master, is it I? He said unto him, Thou hast said." },
+      { book: "Matthew", chapter: 26, verse: 26, text: "And as they were eating, Jesus took bread, and blessed it, and brake it, and gave it to the disciples, and said, Take, eat; this is my body." },
+      { book: "Matthew", chapter: 26, verse: 27, text: "And he took the cup, and gave thanks, and gave it to them, saying, Drink ye all of it;" },
+      { book: "Matthew", chapter: 26, verse: 28, text: "For this is my blood of the new testament, which is shed for many for the remission of sins." },
+      { book: "Matthew", chapter: 26, verse: 29, text: "But I say unto you, I will not drink henceforth of this fruit of the vine, until that day when I drink it new with you in my Father's kingdom." },
+      { book: "Matthew", chapter: 26, verse: 30, text: "And when they had sung an hymn, they went out into the mount of Olives." },
+      { book: "Matthew", chapter: 26, verse: 31, text: "Then saith Jesus unto them, All ye shall be offended because of me this night: for it is written, I will smite the shepherd, and the sheep of the flock shall be scattered abroad." },
+      { book: "Matthew", chapter: 26, verse: 32, text: "But after I am risen again, I will go before you into Galilee." },
+      { book: "Matthew", chapter: 26, verse: 33, text: "Peter answered and said unto him, Though all men shall be offended because of thee, yet will I never be offended." },
+      { book: "Matthew", chapter: 26, verse: 34, text: "Jesus said unto him, Verily I say unto thee, That this night, before the cock crow, thou shalt deny me thrice." },
+      { book: "Matthew", chapter: 26, verse: 35, text: "Peter said unto him, Though I should die with thee, yet will I not deny thee. Likewise also said all the disciples." },
+      { book: "Matthew", chapter: 26, verse: 36, text: "Then cometh Jesus with them unto a place called Gethsemane, and saith unto the disciples, Sit ye here, while I go and pray yonder." },
+      { book: "Matthew", chapter: 26, verse: 37, text: "And he took with him Peter and the two sons of Zebedee, and began to be sorrowful and very heavy." },
+      { book: "Matthew", chapter: 26, verse: 38, text: "Then saith he unto them, My soul is exceeding sorrowful, even unto death: tarry ye here, and watch with me." },
+      { book: "Matthew", chapter: 26, verse: 39, text: "And he went a little farther, and fell on his face, and prayed, saying, O my Father, if it be possible, let this cup pass from me: nevertheless not as I will, but as thou wilt." },
+      { book: "Matthew", chapter: 26, verse: 40, text: "And he cometh unto the disciples, and findeth them asleep, and saith unto Peter, What, could ye not watch with me one hour?" },
+      { book: "Matthew", chapter: 26, verse: 41, text: "Watch and pray, that ye enter not into temptation: the spirit indeed is willing, but the flesh is weak." },
+      { book: "Matthew", chapter: 26, verse: 42, text: "He went away again the second time, and prayed, saying, O my Father, if this cup may not pass away from me, except I drink it, thy will be done." },
+      { book: "Matthew", chapter: 26, verse: 43, text: "And he came and found them asleep again: for their eyes were heavy." },
+      { book: "Matthew", chapter: 26, verse: 44, text: "And he left them, and went away again, and prayed the third time, saying the same words." },
+      { book: "Matthew", chapter: 26, verse: 45, text: "Then cometh he to his disciples, and saith unto them, Sleep on now, and take your rest: behold, the hour is at hand, and the Son of man is betrayed into the hands of sinners." },
+      { book: "Matthew", chapter: 26, verse: 46, text: "Rise, let us be going: behold, he is at hand that doth betray me." },
+      { book: "Matthew", chapter: 26, verse: 47, text: "And while he yet spake, lo, Judas, one of the twelve, came, and with him a great multitude with swords and staves, from the chief priests and elders of the people." },
+      { book: "Matthew", chapter: 26, verse: 48, text: "Now he that betrayed him gave them a sign, saying, Whomsoever I shall kiss, that same is he: hold him fast." },
+      { book: "Matthew", chapter: 26, verse: 49, text: "And forthwith he came to Jesus, and said, Hail, master; and kissed him." },
+      { book: "Matthew", chapter: 26, verse: 50, text: "And Jesus said unto him, Friend, wherefore art thou come? Then came they, and laid hands on Jesus, and took him." },
+      { book: "Matthew", chapter: 26, verse: 51, text: "And, behold, one of them which were with Jesus stretched out his hand, and drew his sword, and struck a servant of the high priest's, and smote off his ear." },
+      { book: "Matthew", chapter: 26, verse: 52, text: "Then said Jesus unto him, Put up again thy sword into his place: for all they that take the sword shall perish with the sword." },
+      { book: "Matthew", chapter: 26, verse: 53, text: "Thinkest thou that I cannot now pray to my Father, and he shall presently give me more than twelve legions of angels?" },
+      { book: "Matthew", chapter: 26, verse: 54, text: "But how then shall the scriptures be fulfilled, that thus it must be?" },
+      { book: "Matthew", chapter: 26, verse: 55, text: "In that same hour said Jesus to the multitudes, Are ye come out as against a thief with swords and staves for to take me? I sat daily with you teaching in the temple, and ye laid no hold on me." },
+      { book: "Matthew", chapter: 26, verse: 56, text: "But all this was done, that the scriptures of the prophets might be fulfilled. Then all the disciples forsook him, and fled." },
+      { book: "Matthew", chapter: 26, verse: 57, text: "And they that had laid hold on Jesus led him away to Caiaphas the high priest, where the scribes and the elders were assembled." },
+      { book: "Matthew", chapter: 26, verse: 58, text: "But Peter followed him afar off unto the high priest's palace, and went in, and sat with the servants, to see the end." },
+      { book: "Matthew", chapter: 26, verse: 59, text: "Now the chief priests, and elders, and all the council, sought false witness against Jesus, to put him to death;" },
+      { book: "Matthew", chapter: 26, verse: 60, text: "But found none: yea, though many false witnesses came, yet found they none. At the last came two false witnesses," },
+      { book: "Matthew", chapter: 26, verse: 61, text: "And said, This fellow said, I am able to destroy the temple of God, and to build it in three days." },
+      { book: "Matthew", chapter: 26, verse: 62, text: "And the high priest arose, and said unto him, Answerest thou nothing? what is it which these witness against thee?" },
+      { book: "Matthew", chapter: 26, verse: 63, text: "But Jesus held his peace. And the high priest answered and said unto him, I adjure thee by the living God, that thou tell us whether thou be the Christ, the Son of God." },
+      { book: "Matthew", chapter: 26, verse: 64, text: "Jesus saith unto him, Thou hast said: nevertheless I say unto you, Hereafter shall ye see the Son of man sitting on the right hand of power, and coming in the clouds of heaven." },
+      { book: "Matthew", chapter: 26, verse: 65, text: "Then the high priest rent his clothes, saying, He hath spoken blasphemy; what further need have we of witnesses? behold, now ye have heard his blasphemy." },
+      { book: "Matthew", chapter: 26, verse: 66, text: "What think ye? They answered and said, He is guilty of death." },
+      { book: "Matthew", chapter: 26, verse: 67, text: "Then did they spit in his face, and buffeted him; and others smote him with the palms of their hands," },
+      { book: "Matthew", chapter: 26, verse: 68, text: "Saying, Prophesy unto us, thou Christ, Who is he that smote thee?" },
+      { book: "Matthew", chapter: 26, verse: 69, text: "Now Peter sat without in the palace: and a damsel came unto him, saying, Thou also wast with Jesus of Galilee." },
+      { book: "Matthew", chapter: 26, verse: 70, text: "But he denied before them all, saying, I know not what thou sayest." },
+      { book: "Matthew", chapter: 26, verse: 71, text: "And when he was gone out into the porch, another maid saw him, and said unto them that were there, This fellow was also with Jesus of Nazareth." },
+      { book: "Matthew", chapter: 26, verse: 72, text: "And again he denied with an oath, I do not know the man." },
+      { book: "Matthew", chapter: 26, verse: 73, text: "And after a while came unto him they that stood by, and said to Peter, Surely thou also art one of them; for thy speech bewrayeth thee." },
+      { book: "Matthew", chapter: 26, verse: 74, text: "Then began he to curse and to swear, saying, I know not the man. And immediately the cock crew." },
+      { book: "Matthew", chapter: 26, verse: 75, text: "And Peter remembered the word of Jesus, which said unto him, Before the cock crow, thou shalt deny me thrice. And he went out, and wept bitterly." },
+    ],
+  },
+  {
+    reference: "Daniel 9 (KJV)",
+    verses: [
+      { book: "Daniel", chapter: 9, verse: 1, text: "In the first year of Darius the son of Ahasuerus, of the seed of the Medes, which was made king over the realm of the Chaldeans;" },
+      { book: "Daniel", chapter: 9, verse: 2, text: "In the first year of his reign I Daniel understood by books the number of the years, whereof the word of the LORD came to Jeremiah the prophet, that he would accomplish seventy years in the desolations of Jerusalem." },
+      { book: "Daniel", chapter: 9, verse: 3, text: "And I set my face unto the Lord God, to seek by prayer and supplications, with fasting, and sackcloth, and ashes:" },
+      { book: "Daniel", chapter: 9, verse: 4, text: "And I prayed unto the LORD my God, and made my confession, and said, O Lord, the great and dreadful God, keeping the covenant and mercy to them that love him, and to them that keep his commandments;" },
+      { book: "Daniel", chapter: 9, verse: 5, text: "We have sinned, and have committed iniquity, and have done wickedly, and have rebelled, even by departing from thy precepts and from thy judgments:" },
+      { book: "Daniel", chapter: 9, verse: 6, text: "Neither have we hearkened unto thy servants the prophets, which spake in thy name to our kings, our princes, and our fathers, and to all the people of the land." },
+      { book: "Daniel", chapter: 9, verse: 7, text: "O Lord, righteousness belongeth unto thee, but unto us confusion of faces, as at this day; to the men of Judah, and to the inhabitants of Jerusalem, and unto all Israel, that are near, and that are far off, through all the countries whither thou hast driven them, because of their trespass that they have trespassed against thee." },
+      { book: "Daniel", chapter: 9, verse: 8, text: "O Lord, to us belongeth confusion of face, to our kings, to our princes, and to our fathers, because we have sinned against thee." },
+      { book: "Daniel", chapter: 9, verse: 9, text: "To the Lord our God belong mercies and forgivenesses, though we have rebelled against him;" },
+      { book: "Daniel", chapter: 9, verse: 10, text: "Neither have we obeyed the voice of the LORD our God, to walk in his laws, which he set before us by his servants the prophets." },
+      { book: "Daniel", chapter: 9, verse: 11, text: "Yea, all Israel have transgressed thy law, even by departing, that they might not obey thy voice; therefore the curse is poured upon us, and the oath that is written in the law of Moses the servant of God, because we have sinned against him." },
+      { book: "Daniel", chapter: 9, verse: 12, text: "And he hath confirmed his words, which he spake against us, and against our judges that judged us, by bringing upon us a great evil: for under the whole heaven hath not been done as hath been done upon Jerusalem." },
+      { book: "Daniel", chapter: 9, verse: 13, text: "As it is written in the law of Moses, all this evil is come upon us: yet made we not our prayer before the LORD our God, that we might turn from our iniquities, and understand thy truth." },
+      { book: "Daniel", chapter: 9, verse: 14, text: "Therefore hath the LORD watched upon the evil, and brought it upon us: for the LORD our God is righteous in all his works which he doeth: for we obeyed not his voice." },
+      { book: "Daniel", chapter: 9, verse: 15, text: "And now, O Lord our God, that hast brought thy people forth out of the land of Egypt with a mighty hand, and hast gotten thee renown, as at this day; we have sinned, we have done wickedly." },
+      { book: "Daniel", chapter: 9, verse: 16, text: "O Lord, according to all thy righteousness, I beseech thee, let thine anger and thy fury be turned away from thy city Jerusalem, thy holy mountain: because for our sins, and for the iniquities of our fathers, Jerusalem and thy people are become a reproach to all that are about us." },
+      { book: "Daniel", chapter: 9, verse: 17, text: "Now therefore, O our God, hear the prayer of thy servant, and his supplications, and cause thy face to shine upon thy sanctuary that is desolate, for the Lord's sake." },
+      { book: "Daniel", chapter: 9, verse: 18, text: "O my God, incline thine ear, and hear; open thine eyes, and behold our desolations, and the city which is called by thy name: for we do not present our supplications before thee for our righteousnesses, but for thy great mercies." },
+      { book: "Daniel", chapter: 9, verse: 19, text: "O Lord, hear; O Lord, forgive; O Lord, hearken and do; defer not, for thine own sake, O my God: for thy city and thy people are called by thy name." },
+      { book: "Daniel", chapter: 9, verse: 20, text: "And whiles I was speaking, and praying, and confessing my sin and the sin of my people Israel, and presenting my supplication before the LORD my God for the holy mountain of my God;" },
+      { book: "Daniel", chapter: 9, verse: 21, text: "Yea, whiles I was speaking in prayer, even the man Gabriel, whom I had seen in the vision at the beginning, being caused to fly swiftly, touched me about the time of the evening oblation." },
+      { book: "Daniel", chapter: 9, verse: 22, text: "And he informed me, and talked with me, and said, O Daniel, I am now come forth to give thee skill and understanding." },
+      { book: "Daniel", chapter: 9, verse: 23, text: "At the beginning of thy supplications the commandment came forth, and I am come to shew thee; for thou art greatly beloved: therefore understand the matter, and consider the vision." },
+      { book: "Daniel", chapter: 9, verse: 24, text: "Seventy weeks are determined upon thy people and upon thy holy city, to finish the transgression, and to make an end of sins, and to make reconciliation for iniquity, and to bring in everlasting righteousness, and to seal up the vision and prophecy, and to anoint the most Holy." },
+      { book: "Daniel", chapter: 9, verse: 25, text: "Know therefore and understand, that from the going forth of the commandment to restore and to build Jerusalem unto the Messiah the Prince shall be seven weeks, and threescore and two weeks: the street shall be built again, and the wall, even in troublous times." },
+      { book: "Daniel", chapter: 9, verse: 26, text: "And after threescore and two weeks shall Messiah be cut off, but not for himself: and the people of the prince that shall come shall destroy the city and the sanctuary; and the end thereof shall be with a flood, and unto the end of the war desolations are determined." },
+      { book: "Daniel", chapter: 9, verse: 27, text: "And he shall confirm the covenant with many for one week: and in the midst of the week he shall cause the sacrifice and the oblation to cease, and for the overspreading of abominations he shall make it desolate, even until the consummation, and that determined shall be poured upon the desolate." },
+    ],
+  },
+  {
     reference: "Philippians 4 (KJV)",
     verses: [
       { book: "Philippians", chapter: 4, verse: 1, text: "Therefore, my brethren dearly beloved and longed for, my joy and crown, so stand fast in the Lord, my dearly beloved." },
@@ -1566,7 +1678,7 @@ function ScriptureCards() {
           One verse at a time. Choose a passage to start reading:
         </p>
         <div className="mt-10 flex flex-col sm:flex-row flex-wrap justify-center gap-4">
-          {PASSAGES.slice(0, 1).map((passage) => (
+          {PASSAGES.slice(0, 2).map((passage) => (
             <button
               key={passage.reference}
               onClick={() => startWith(passage)}
@@ -1589,7 +1701,7 @@ function ScriptureCards() {
 
         {showPrevious && (
           <div className="mt-4 flex flex-col sm:flex-row flex-wrap justify-center gap-4">
-            {PASSAGES.slice(1).map((passage) => (
+            {PASSAGES.slice(2).map((passage) => (
               <button
                 key={passage.reference}
                 onClick={() => startWith(passage)}
