@@ -28,6 +28,69 @@ const VERSIONS = [
 
 const PASSAGES: PassageData[] = [
   {
+    reference: "Colossians 2 (KJV)",
+    verses: [
+      { book: "Colossians", chapter: 2, verse: 1, text: "For I would that ye knew what great conflict I have for you, and for them at Laodicea, and for as many as have not seen my face in the flesh;" },
+      { book: "Colossians", chapter: 2, verse: 2, text: "That their hearts might be comforted, being knit together in love, and unto all riches of the full assurance of understanding, to the acknowledgement of the mystery of God, and of the Father, and of Christ;" },
+      { book: "Colossians", chapter: 2, verse: 3, text: "In whom are hid all the treasures of wisdom and knowledge." },
+      { book: "Colossians", chapter: 2, verse: 4, text: "And this I say, lest any man should beguile you with enticing words." },
+      { book: "Colossians", chapter: 2, verse: 5, text: "For though I be absent in the flesh, yet am I with you in the spirit, joying and beholding your order, and the stedfastness of your faith in Christ." },
+      { book: "Colossians", chapter: 2, verse: 6, text: "As ye have therefore received Christ Jesus the Lord, so walk ye in him:" },
+      { book: "Colossians", chapter: 2, verse: 7, text: "Rooted and built up in him, and stablished in the faith, as ye have been taught, abounding therein with thanksgiving." },
+      { book: "Colossians", chapter: 2, verse: 8, text: "Beware lest any man spoil you through philosophy and vain deceit, after the tradition of men, after the rudiments of the world, and not after Christ." },
+      { book: "Colossians", chapter: 2, verse: 9, text: "For in him dwelleth all the fulness of the Godhead bodily." },
+      { book: "Colossians", chapter: 2, verse: 10, text: "And ye are complete in him, which is the head of all principality and power:" },
+      { book: "Colossians", chapter: 2, verse: 11, text: "In whom also ye are circumcised with the circumcision made without hands, in putting off the body of the sins of the flesh by the circumcision of Christ:" },
+      { book: "Colossians", chapter: 2, verse: 12, text: "Buried with him in baptism, wherein also ye are risen with him through the faith of the operation of God, who hath raised him from the dead." },
+      { book: "Colossians", chapter: 2, verse: 13, text: "And you, being dead in your sins and the uncircumcision of your flesh, hath he quickened together with him, having forgiven you all trespasses;" },
+      { book: "Colossians", chapter: 2, verse: 14, text: "Blotting out the handwriting of ordinances that was against us, which was contrary to us, and took it out of the way, nailing it to his cross;" },
+      { book: "Colossians", chapter: 2, verse: 15, text: "And having spoiled principalities and powers, he made a shew of them openly, triumphing over them in it." },
+      { book: "Colossians", chapter: 2, verse: 16, text: "Let no man therefore judge you in meat, or in drink, or in respect of an holyday, or of the new moon, or of the sabbath days:" },
+      { book: "Colossians", chapter: 2, verse: 17, text: "Which are a shadow of things to come; but the body is of Christ." },
+      { book: "Colossians", chapter: 2, verse: 18, text: "Let no man beguile you of your reward in a voluntary humility and worshipping of angels, intruding into those things which he hath not seen, vainly puffed up by his fleshly mind," },
+      { book: "Colossians", chapter: 2, verse: 19, text: "And not holding the Head, from which all the body by joints and bands having nourishment ministered, and knit together, increaseth with the increase of God." },
+      { book: "Colossians", chapter: 2, verse: 20, text: "Wherefore if ye be dead with Christ from the rudiments of the world, why, as though living in the world, are ye subject to ordinances," },
+      { book: "Colossians", chapter: 2, verse: 21, text: "(Touch not; taste not; handle not;" },
+      { book: "Colossians", chapter: 2, verse: 22, text: "Which all are to perish with the using;) after the commandments and doctrines of men?" },
+      { book: "Colossians", chapter: 2, verse: 23, text: "Which things have indeed a shew of wisdom in will worship, and humility, and neglecting of the body; not in any honour to the satisfying of the flesh." },
+    ],
+  },
+  {
+    reference: "Philippians 2 (KJV)",
+    verses: [
+      { book: "Philippians", chapter: 2, verse: 1, text: "If there be therefore any consolation in Christ, if any comfort of love, if any fellowship of the Spirit, if any bowels and mercies," },
+      { book: "Philippians", chapter: 2, verse: 2, text: "Fulfil ye my joy, that ye be likeminded, having the same love, being of one accord, of one mind." },
+      { book: "Philippians", chapter: 2, verse: 3, text: "Let nothing be done through strife or vainglory; but in lowliness of mind let each esteem other better than themselves." },
+      { book: "Philippians", chapter: 2, verse: 4, text: "Look not every man on his own things, but every man also on the things of others." },
+      { book: "Philippians", chapter: 2, verse: 5, text: "Let this mind be in you, which was also in Christ Jesus:" },
+      { book: "Philippians", chapter: 2, verse: 6, text: "Who, being in the form of God, thought it not robbery to be equal with God:" },
+      { book: "Philippians", chapter: 2, verse: 7, text: "But made himself of no reputation, and took upon him the form of a servant, and was made in the likeness of men:" },
+      { book: "Philippians", chapter: 2, verse: 8, text: "And being found in fashion as a man, he humbled himself, and became obedient unto death, even the death of the cross." },
+      { book: "Philippians", chapter: 2, verse: 9, text: "Wherefore God also hath highly exalted him, and given him a name which is above every name:" },
+      { book: "Philippians", chapter: 2, verse: 10, text: "That at the name of Jesus every knee should bow, of things in heaven, and things in earth, and things under the earth;" },
+      { book: "Philippians", chapter: 2, verse: 11, text: "And that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father." },
+      { book: "Philippians", chapter: 2, verse: 12, text: "Wherefore, my beloved, as ye have always obeyed, not as in my presence only, but now much more in my absence, work out your own salvation with fear and trembling." },
+      { book: "Philippians", chapter: 2, verse: 13, text: "For it is God which worketh in you both to will and to do of his good pleasure." },
+      { book: "Philippians", chapter: 2, verse: 14, text: "Do all things without murmurings and disputings:" },
+      { book: "Philippians", chapter: 2, verse: 15, text: "That ye may be blameless and harmless, the sons of God, without rebuke, in the midst of a crooked and perverse nation, among whom ye shine as lights in the world;" },
+      { book: "Philippians", chapter: 2, verse: 16, text: "Holding forth the word of life; that I may rejoice in the day of Christ, that I have not run in vain, neither laboured in vain." },
+      { book: "Philippians", chapter: 2, verse: 17, text: "Yea, and if I be offered upon the sacrifice and service of your faith, I joy, and rejoice with you all." },
+      { book: "Philippians", chapter: 2, verse: 18, text: "For the same cause also do ye joy, and rejoice with me." },
+      { book: "Philippians", chapter: 2, verse: 19, text: "But I trust in the Lord Jesus to send Timotheus shortly unto you, that I also may be of good comfort, when I know your state." },
+      { book: "Philippians", chapter: 2, verse: 20, text: "For I have no man likeminded, who will naturally care for your state." },
+      { book: "Philippians", chapter: 2, verse: 21, text: "For all seek their own, not the things which are Jesus Christ's." },
+      { book: "Philippians", chapter: 2, verse: 22, text: "But ye know the proof of him, that, as a son with the father, he hath served with me in the gospel." },
+      { book: "Philippians", chapter: 2, verse: 23, text: "Him therefore I hope to send presently, so soon as I shall see how it will go with me." },
+      { book: "Philippians", chapter: 2, verse: 24, text: "But I trust in the Lord that I also myself shall come shortly." },
+      { book: "Philippians", chapter: 2, verse: 25, text: "Yet I supposed it necessary to send to you Epaphroditus, my brother, and companion in labour, and fellow soldier, but your messenger, and he that ministered to my wants." },
+      { book: "Philippians", chapter: 2, verse: 26, text: "For he longed after you all, and was full of heaviness, because that ye had heard that he had been sick." },
+      { book: "Philippians", chapter: 2, verse: 27, text: "For indeed he was sick nigh unto death: but God had mercy on him; and not on him only, but on me also, lest I should have sorrow upon sorrow." },
+      { book: "Philippians", chapter: 2, verse: 28, text: "I sent him therefore the more carefully, that, when ye see him again, ye may rejoice, and that I may be the less sorrowful." },
+      { book: "Philippians", chapter: 2, verse: 29, text: "Receive him therefore in the Lord with all gladness; and hold such in reputation:" },
+      { book: "Philippians", chapter: 2, verse: 30, text: "Because for the work of Christ he was nigh unto death, not regarding his life, to supply your lack of service toward me." },
+    ],
+  },
+  {
     reference: "1 Samuel 13 (KJV)",
     verses: [
       { book: "1 Samuel", chapter: 13, verse: 1, text: "Saul reigned one year; and when he had reigned two years over Israel," },
@@ -1839,7 +1902,7 @@ function ScriptureCards() {
           One verse at a time. Choose a passage to start reading:
         </p>
         <div className="mt-10 flex flex-col sm:flex-row flex-wrap justify-center gap-4">
-          {PASSAGES.slice(0, 1).map((passage) => (
+          {PASSAGES.slice(0, 2).map((passage) => (
             <button
               key={passage.reference}
               onClick={() => startWith(passage)}
@@ -1862,7 +1925,7 @@ function ScriptureCards() {
 
         {showPrevious && (
           <div className="mt-4 flex flex-col sm:flex-row flex-wrap justify-center gap-4">
-            {PASSAGES.slice(1).map((passage) => (
+            {PASSAGES.slice(2).map((passage) => (
               <button
                 key={passage.reference}
                 onClick={() => startWith(passage)}
