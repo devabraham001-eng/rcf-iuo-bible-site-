@@ -28,6 +28,62 @@ const VERSIONS = [
 
 const PASSAGES: PassageData[] = [
   {
+    reference: "Matthew 28 (KJV)",
+    verses: [
+      { book: "Matthew", chapter: 28, verse: 1, text: "In the end of the sabbath, as it began to dawn toward the first day of the week, came Mary Magdalene and the other Mary to see the sepulchre." },
+      { book: "Matthew", chapter: 28, verse: 2, text: "And, behold, there was a great earthquake: for the angel of the Lord descended from heaven, and came and rolled back the stone from the door, and sat upon it." },
+      { book: "Matthew", chapter: 28, verse: 3, text: "His countenance was like lightning, and his raiment white as snow:" },
+      { book: "Matthew", chapter: 28, verse: 4, text: "And for fear of him the keepers did shake, and became as dead men." },
+      { book: "Matthew", chapter: 28, verse: 5, text: "And the angel answered and said unto the women, Fear not ye: for I know that ye seek Jesus, which was crucified." },
+      { book: "Matthew", chapter: 28, verse: 6, text: "He is not here: for he is risen, as he said. Come, see the place where the Lord lay." },
+      { book: "Matthew", chapter: 28, verse: 7, text: "And go quickly, and tell his disciples that he is risen from the dead; and, behold, he goeth before you into Galilee; there shall ye see him: lo, I have told you." },
+      { book: "Matthew", chapter: 28, verse: 8, text: "And they departed quickly from the sepulchre with fear and great joy; and did run to bring his disciples word." },
+      { book: "Matthew", chapter: 28, verse: 9, text: "And as they went to tell his disciples, behold, Jesus met them, saying, All hail. And they came and held him by the feet, and worshipped him." },
+      { book: "Matthew", chapter: 28, verse: 10, text: "Then said Jesus unto them, Be not afraid: go tell my brethren that they go into Galilee, and there shall they see me." },
+      { book: "Matthew", chapter: 28, verse: 11, text: "Now when they were going, behold, some of the watch came into the city, and shewed unto the chief priests all the things that were done." },
+      { book: "Matthew", chapter: 28, verse: 12, text: "And when they were assembled with the elders, and had taken counsel, they gave large money unto the soldiers," },
+      { book: "Matthew", chapter: 28, verse: 13, text: "Saying, Say ye, His disciples came by night, and stole him away while we slept." },
+      { book: "Matthew", chapter: 28, verse: 14, text: "And if this come to the governor's ears, we will persuade him, and secure you." },
+      { book: "Matthew", chapter: 28, verse: 15, text: "So they took the money, and did as they were taught: and this saying is commonly reported among the Jews until this day." },
+      { book: "Matthew", chapter: 28, verse: 16, text: "Then the eleven disciples went away into Galilee, into a mountain where Jesus had appointed them." },
+      { book: "Matthew", chapter: 28, verse: 17, text: "And when they saw him, they worshipped him: but some doubted." },
+      { book: "Matthew", chapter: 28, verse: 18, text: "And Jesus came and spake unto them, saying, All power is given unto me in heaven and in earth." },
+      { book: "Matthew", chapter: 28, verse: 19, text: "Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost:" },
+      { book: "Matthew", chapter: 28, verse: 20, text: "Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world. Amen." },
+    ],
+  },
+  {
+    reference: "Acts 1 (KJV)",
+    verses: [
+      { book: "Acts", chapter: 1, verse: 1, text: "The former treatise have I made, O Theophilus, of all that Jesus began both to do and teach," },
+      { book: "Acts", chapter: 1, verse: 2, text: "Until the day in which he was taken up, after that he through the Holy Ghost had given commandments unto the apostles whom he had chosen:" },
+      { book: "Acts", chapter: 1, verse: 3, text: "To whom also he shewed himself alive after his passion by many infallible proofs, being seen of them forty days, and speaking of the things pertaining to the kingdom of God:" },
+      { book: "Acts", chapter: 1, verse: 4, text: "And, being assembled together with them, commanded them that they should not depart from Jerusalem, but wait for the promise of the Father, which, saith he, ye have heard of me." },
+      { book: "Acts", chapter: 1, verse: 5, text: "For John truly baptized with water; but ye shall be baptized with the Holy Ghost not many days hence." },
+      { book: "Acts", chapter: 1, verse: 6, text: "When they therefore were come together, they asked of him, saying, Lord, wilt thou at this time restore again the kingdom to Israel?" },
+      { book: "Acts", chapter: 1, verse: 7, text: "And he said unto them, It is not for you to know the times or the seasons, which the Father hath put in his own power." },
+      { book: "Acts", chapter: 1, verse: 8, text: "But ye shall receive power, after that the Holy Ghost is come upon you: and ye shall be witnesses unto me both in Jerusalem, and in all Judaea, and in Samaria, and unto the uttermost part of the earth." },
+      { book: "Acts", chapter: 1, verse: 9, text: "And when he had spoken these things, while they beheld, he was taken up; and a cloud received him out of their sight." },
+      { book: "Acts", chapter: 1, verse: 10, text: "And while they looked stedfastly toward heaven as he went up, behold, two men stood by them in white apparel;" },
+      { book: "Acts", chapter: 1, verse: 11, text: "Which also said, Ye men of Galilee, why stand ye gazing up into heaven? this same Jesus, which is taken up from you into heaven, shall so come in like manner as ye have seen him go into heaven." },
+      { book: "Acts", chapter: 1, verse: 12, text: "Then returned they unto Jerusalem from the mount called Olivet, which is from Jerusalem a sabbath day's journey." },
+      { book: "Acts", chapter: 1, verse: 13, text: "And when they were come in, they went up into an upper room, where abode both Peter, and James, and John, and Andrew, Philip, and Thomas, Bartholomew, and Matthew, James the son of Alphaeus, and Simon Zelotes, and Judas the brother of James." },
+      { book: "Acts", chapter: 1, verse: 14, text: "These all continued with one accord in prayer and supplication, with the women, and Mary the mother of Jesus, and with his brethren." },
+      { book: "Acts", chapter: 1, verse: 15, text: "And in those days Peter stood up in the midst of the disciples, and said, (the number of names together were about an hundred and twenty,)" },
+      { book: "Acts", chapter: 1, verse: 16, text: "Men and brethren, this scripture must needs have been fulfilled, which the Holy Ghost by the mouth of David spake before concerning Judas, which was guide to them that took Jesus." },
+      { book: "Acts", chapter: 1, verse: 17, text: "For he was numbered with us, and had obtained part of this ministry." },
+      { book: "Acts", chapter: 1, verse: 18, text: "Now this man purchased a field with the reward of iniquity; and falling headlong, he burst asunder in the midst, and all his bowels gushed out." },
+      { book: "Acts", chapter: 1, verse: 19, text: "And it was known unto all the dwellers at Jerusalem; insomuch as that field is called in their proper tongue, Aceldama, that is to say, The field of blood." },
+      { book: "Acts", chapter: 1, verse: 20, text: "For it is written in the book of Psalms, Let his habitation be desolate, and let no man dwell therein: and his bishoprick let another take." },
+      { book: "Acts", chapter: 1, verse: 21, text: "Wherefore of these men which have companied with us all the time that the Lord Jesus went in and out among us," },
+      { book: "Acts", chapter: 1, verse: 22, text: "Beginning from the baptism of John, unto that same day that he was taken up from us, must one be ordained to be a witness with us of his resurrection." },
+      { book: "Acts", chapter: 1, verse: 23, text: "And they appointed two, Joseph called Barsabas, who was surnamed Justus, and Matthias." },
+      { book: "Acts", chapter: 1, verse: 24, text: "And they prayed, and said, Thou, Lord, which knowest the hearts of all men, shew whether of these two thou hast chosen," },
+      { book: "Acts", chapter: 1, verse: 25, text: "That he may take part of this ministry and apostleship, from which Judas by transgression fell, that he might go to his own place." },
+      { book: "Acts", chapter: 1, verse: 26, text: "And they gave forth their lots; and the lot fell upon Matthias; and he was numbered with the eleven apostles." },
+    ],
+  },
+  {
     reference: "Matthew 16 (KJV)",
     verses: [
       { book: "Matthew", chapter: 16, verse: 1, text: "The Pharisees also with the Sadducees came, and tempting desired him that he would shew them a sign from heaven." },
@@ -1992,7 +2048,7 @@ function ScriptureCards() {
           One verse at a time. Choose a passage to start reading:
         </p>
         <div className="mt-10 flex flex-col sm:flex-row flex-wrap justify-center gap-4">
-          {PASSAGES.slice(0, 1).map((passage) => (
+          {PASSAGES.slice(0, 2).map((passage) => (
             <button
               key={passage.reference}
               onClick={() => startWith(passage)}
@@ -2015,7 +2071,7 @@ function ScriptureCards() {
 
         {showPrevious && (
           <div className="mt-4 flex flex-col sm:flex-row flex-wrap justify-center gap-4">
-            {PASSAGES.slice(1).map((passage) => (
+            {PASSAGES.slice(2).map((passage) => (
               <button
                 key={passage.reference}
                 onClick={() => startWith(passage)}
